@@ -1,0 +1,27 @@
+<view class="index_content" wx:if="{{isShow === false}}">
+  <camera class="cameraCls" flash="off" device-position="{{orientation}}"></camera>
+  <cover-view class="img_group">
+    <cover-image src="https://ae01.alicdn.com/kf/Hc763fe9854804ce0a7e896206156c2c03.png" bindtap="handleChangeOrien"></cover-image>
+    <cover-image src="https://ae01.alicdn.com/kf/H33b9ca708ae1418d8b4bd5ab1b605554R.png" bindtap="takePhoto"></cover-image>
+    <cover-image src="https://ae01.alicdn.com/kf/Ha9763c308d934ca48be8609459d0a8404.png" bindtap="handleChooseImg"></cover-image>
+  </cover-view>
+</view>
+<view wx:else class="img_show">
+  <image src="{{cameraSrc}}"></image>
+  <button class="rechoose_img" bindtap="handleRechoose">重新选择</button>
+    <view class="face_data">
+    <view class="date_item">
+      <text>年龄：{{face_list.age}}</text>
+      <text>颜值：{{face_list.beauty}}</text>
+    </view>
+    <view class="date_item">
+      <text>性别{{face_list.gender.type}}</text>
+      <text>表情：{{face_list.expression.type}}</text>
+    </view>
+    <view class="date_item">
+      <text>眼镜：{{face_list.glasses.type}}</text>
+      <text>情绪：{{face_list.emotion.type}}</text>
+    </view>
+  </view>
+</view>
+

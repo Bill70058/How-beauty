@@ -1,0 +1,61 @@
+.index_content {
+  position: relative;
+}
+
+.cameraCls {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: pink; */
+}
+
+.img_group {
+  display: flex;
+  position: absolute;
+  bottom: 60rpx;
+  left: 100rpx;
+}
+
+.img_group cover-image {
+  flex: 1;
+  width: 90rpx;
+  height: 90rpx;
+  margin-right: 140rpx;
+  color: #eee;
+}
+
+.img_show{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.img_show image {
+  height: 100%;
+  width: 100% !important;
+  display: block;
+}
+.rechoose_img {
+  position: absolute;
+  bottom: 50rpx;
+  left: 25%;
+  background-color: #fa5151;
+  color: #eee;
+}
+
+.face_data {
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+height: 200rpx;
+width: 80%;
+background-color: rgba(255,255,255,0.7);
+border-radius: 5rpx;
+box-shadow: 0px 1px 5px #eee;
+}
+.date_item {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30rpx;
+}
+.date_item text {
+}
